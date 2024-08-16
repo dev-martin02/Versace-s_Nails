@@ -12,7 +12,7 @@ function App() {
       
       {/* Introduction statement */}
       <div className="flex bg-pink-50 w-full max-w-md p-1 rounded-lg">
-        <div className="w-2/3">
+        <div className="w-67">
           <img className="rounded-md object-cover h-full" src={dogPic} alt="" />
         </div>
         <div className="p-2">
