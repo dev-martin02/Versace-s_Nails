@@ -3,6 +3,7 @@ import dogPic from "./assets/dog.jpg";
 import ingIcon from "./assets/instagram.svg";
 import whatIcon from "./assets/whatsapp.svg";
 import gmailIcon from "./assets/gmail.svg";
+import Services from "./components/services/Services";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         />
       </div>
       
+      <Services/>
       {/* Social Media + appointment button  */}
       <div className="flex flex-col gap-2 bg-pink-50 p-4 rounded-lg w-full max-w-md">
         <h3 className="font-semibold">📞 Contact Us</h3>
