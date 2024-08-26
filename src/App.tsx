@@ -1,52 +1,40 @@
 import { PopupButton } from "react-calendly";
 import dogPic from "./assets/dog.jpg";
-import ingIcon from "./assets/instagram.svg";
-import whatIcon from "./assets/whatsapp.svg";
-import gmailIcon from "./assets/gmail.svg";
-import Services from "./components/services/Services";
+
+import {Services} from "./components/services/Services";
+import { Announcements } from "./components/announcements/Announcments";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-pink-200 p-4 gap-4">
-      <h1 className="text-2xl md:text-4xl text-center">Versace Nails 💅</h1>
-      <p className="font-semibold text-center">Where Elegance Meets Artistry</p>
+        <h1 className="text-3xl md:text-5xl text-center font-extrabold text-pink-600 tracking-wide mb-2 font-serif">
+           Versace Nails <span className="inline-block animate-pulse">💅</span>
+       </h1>
+        <p className="font-semibold text-center text-lg md:text-xl text-gray-700 italic tracking-wider">
+          Where <span className="text-pink-500">Elegance</span> Meets <span className="text-pink-500">Artistry</span>
+        </p>
       
       {/* Introduction statement */}
       <div className="flex flex-col sm:flex-row bg-pink-50 w-full max-w-md p-2 rounded-lg">
-  <div className="w-full sm:w-1/3 mb-2 sm:mb-0 flex justify-center items-center">
-    <img className="rounded-md w-52 h-auto " src={dogPic} alt="" />
-  </div>
-  <div className="sm:pl-2 flex-1">
-    <h2 className="text-lg font-semibold">Welcome to Versace Nails</h2>
-    <p className="text-sm">
-      Indulge in the ultimate nail care experience, where luxury and
-      creativity blend seamlessly. At Versace Nails, we offer exquisite
-      nail services that leave you feeling pampered and glamorous.
-    </p>
-  </div>
-</div>
-      
-      {/* Announcements, Rules, etc... */}
-      <div className="p-4 bg-pink-50 rounded-lg flex flex-col gap-6 w-full max-w-md">
-        <div>
-          <h3 className="font-semibold">🌟 Why Choose Versace Nails?</h3>
-          <ul className="list-disc pl-5">
-            <li>Personalized Services: Tailored treatments to suit your style.</li>
-            <li>Luxurious Environment: Relax in our elegant and hygienic salon.</li>
-            <li>Top-Quality Products: Only the best for your nails.</li>
-          </ul>
+        <div className="w-full sm:w-1/3 mb-2 sm:mb-0 flex justify-center items-center">
+          <img className="rounded-md w-52 h-auto " src={dogPic} alt="" />
         </div>
-        <div>
-          <h3 className="font-semibold">✨ Book Your Appointment Today</h3>
-          <p>
-            Select from our range of bespoke nail treatments, from classic
-            manicures to intricate nail art, all tailored to your unique style.
-            With our easy online booking system, securing your spot has never
-            been simpler.
+
+        <div className="sm:pl-2 flex-1">
+          <h2 className="text-lg font-semibold">Welcome to Versace Nails</h2>
+          <p className="text-sm">
+            Indulge in the ultimate nail care experience, where luxury and
+            creativity blend seamlessly. At Versace Nails, we offer exquisite
+            nail services that leave you feeling pampered and glamorous.
           </p>
         </div>
       </div>
       
+      {/* Announcements, Rules, etc... */}
+      <Announcements/>
+
+      {/* Book an appointment */}
       <div className="bg-pink-50 w-full max-w-md p-4 rounded-lg">
         <p className="font-semibold text-center">
           Elevate your style with stunning nails. Book now.
@@ -58,24 +46,13 @@ function App() {
           text="Book an appointment!!"
         />
       </div>
+      <Services />
       
-      <Services/>
+      {/* {nailServices.map(({name, price, description}) => (
+        <Services name={name} price={price} description={description}/>
+      ))} */}
       {/* Social Media + appointment button  */}
-      <div className="flex flex-col gap-2 bg-pink-50 p-4 rounded-lg w-full max-w-md">
-        <h3 className="font-semibold">📞 Contact Us</h3>
-        <p>Have questions? We're here to help!</p>
-        <div className="flex gap-4 mt-2 justify-center">
-          <span className="w-8">
-            <img src={ingIcon} className="w-full" alt="instagramIcon" />
-          </span>
-          <span className="w-8">
-            <img src={whatIcon} className="w-full" alt="whatsappIcon" />
-          </span>
-          <span className="w-8">
-            <img src={gmailIcon} className="w-full" alt="gmailIcon" />
-          </span>
-        </div>
-      </div>
+      <Footer/>
     </div>
   );
 }

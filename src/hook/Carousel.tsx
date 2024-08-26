@@ -12,7 +12,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       setCurrentImageIndex((prevIndex) => 
         (prevIndex + 1) % images.length
       );
-    }, 10000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, [images.length]);
