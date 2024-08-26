@@ -34,6 +34,8 @@ function App() {
       {/* Announcements, Rules, etc... */}
       <Announcements/>
 
+      <Services />
+      
       {/* Book an appointment */}
       <div className="bg-pink-50 w-full max-w-md p-4 rounded-lg">
         <p className="font-semibold text-center">
@@ -46,11 +48,6 @@ function App() {
           text="Book an appointment!!"
         />
       </div>
-      <Services />
-      
-      {/* {nailServices.map(({name, price, description}) => (
-        <Services name={name} price={price} description={description}/>
-      ))} */}
       {/* Social Media + appointment button  */}
       <Footer/>
     </div>
