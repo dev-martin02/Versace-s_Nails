@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface CarouselProps {
   images: string[];
@@ -9,9 +9,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
-        (prevIndex + 1) % images.length
-      );
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
@@ -19,9 +17,10 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   return (
     <div className="carousel">
-      <img 
-        src={images[currentImageIndex]} 
-        alt={`Carousel image ${currentImageIndex + 1}`} 
+      <img
+        src={images[currentImageIndex]}
+        alt={`Carousel image ${currentImageIndex + 1}`}
+        className=" rounded"
       />
     </div>
   );
