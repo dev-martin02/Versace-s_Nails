@@ -32,12 +32,12 @@ The *Versace Nails* app combines a minimalist aesthetic with vibrant color accen
 
 ## Usage
 
-Visit the live version of Versace Nails at versacenails.netlify.app.
+Visit the live version of Versace Nails at [versacenails.netlify.app](versacenails.netlify.app)
 
 - Explore Services: Browse the available nail services, and view high-quality images showcasing the latest nail art trends.
 - Book an Appointment: Click "Book Now" to schedule directly through Calendly, making it simple to select an available time.
 
-##Contact
+## Contact
 
 For questions or feedback:
 
