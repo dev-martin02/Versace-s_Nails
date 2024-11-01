@@ -37,6 +37,8 @@ Visit the live version of Versace Nails at [versacenails.netlify.app](versacenai
 - Explore Services: Browse the available nail services, and view high-quality images showcasing the latest nail art trends.
 - Book an Appointment: Click "Book Now" to schedule directly through Calendly, making it simple to select an available time.
 
+---
+
 ## Contact
 
 For questions or feedback:
