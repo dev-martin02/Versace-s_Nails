@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Versace Nails 💅
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to *Versace Nails*, a single-page application designed to showcase nail artistry in a beautiful, sleek format. Powered by Calendly, it simplifies appointment scheduling and creates a seamless user experience.
 
-Currently, two official plugins are available:
+[Check it out live here](https://versacenails.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Features](#features)
+- [Design](#design)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contact](#contact)
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Single-Page Application**: Versace Nails is a fully responsive single-page application with a clean, streamlined layout.
+- **Calendly Integration**: Directly book appointments through Calendly, providing users with a hassle-free scheduling experience.
+- **Modern UI Design**: Designed with attention to detail, featuring vibrant colors and an intuitive layout that showcases services elegantly.
+
+---
+
+## Design
+
+The *Versace Nails* app combines a minimalist aesthetic with vibrant color accents to create an elegant user experience. Ideal for users who value both functionality and style.
+
+---
+
+## Usage
+
+Visit the live version of Versace Nails at versacenails.netlify.app.
+
+- Explore Services: Browse the available nail services, and view high-quality images showcasing the latest nail art trends.
+- Book an Appointment: Click "Book Now" to schedule directly through Calendly, making it simple to select an available time.
+
+##Contact
+
+For questions or feedback:
+
+- GitHub: dev-martin02
+- Email: martinmorel2024@gmail.com
